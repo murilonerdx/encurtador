@@ -3,4 +3,4 @@ spring:
     name: encurtador
   data:
     mongodb:
-      uri: mongodb://localhost:27017/encurtador
+      uri: mongodb://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
