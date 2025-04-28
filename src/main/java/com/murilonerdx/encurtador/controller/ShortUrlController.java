@@ -30,13 +30,13 @@ public class ShortUrlController {
 			return;
 		}
 		ShortUrl byUrlShort = shortUrlService.getByUrlShort(urlShort);
-		response.sendRedirect(byUrlShort.getUrlDestiny());
+		response.sendRedirect(byUrlShort.getUrlDestination());
 	}
 
 	@GetMapping("/original/{urlShort}")
 	public String getUrlOriginal(@PathVariable String urlShort, HttpServletResponse response) throws IOException {
 		ShortUrl byUrlShort = shortUrlService.getByUrlShort(urlShort);
-		return byUrlShort.getUrlDestiny();
+		return byUrlShort.getUrlDestination();
 	}
 
 	@PostMapping()

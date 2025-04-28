@@ -27,7 +27,7 @@ public class ShortUrlService {
 	}
 
 	public ShortUrl getByUrlDestiny(String url) {
-		return shortUrlRepository.findLastByUrlDestiny(url);
+		return shortUrlRepository.findLastByUrlDestination(url);
 	}
 
 	public ShortUrl getByUrlShort(String url) {

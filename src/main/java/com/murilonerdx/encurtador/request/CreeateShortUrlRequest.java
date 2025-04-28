@@ -1,13 +1,13 @@
 package com.murilonerdx.encurtador.request;
 
 public class CreeateShortUrlRequest {
-	private String urlDestiny;
+	private String urlDestination;
 
 	public String getUrlDestiny() {
-		return urlDestiny;
+		return urlDestination;
 	}
 
-	public void setUrlDestiny(String urlDestiny) {
-		this.urlDestiny = urlDestiny;
+	public void setUrlDestiny(String urlDestination) {
+		this.urlDestination = urlDestination;
 	}
 }

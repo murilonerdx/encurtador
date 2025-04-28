@@ -15,7 +15,7 @@ import java.time.ZoneId;
 @Data
 public class ShortUrl {
 	private String id;
-	private String urlDestiny;
+	private String urlDestination;
 	private String shortenedUrl;
 	private LocalDate dateCreated = LocalDate.now(ZoneId.of("America/Sao_Paulo"));
 	private LocalDate lastAccess = LocalDate.now(ZoneId.of("America/Sao_Paulo"));
@@ -25,7 +25,7 @@ public class ShortUrl {
 
 	public ShortUrl(String id, String urlDestiny, String shortenedUrl) {
 		this.id = id;
-		this.urlDestiny = urlDestiny;
+		this.urlDestination = urlDestination;
 		this.shortenedUrl = shortenedUrl;
 	}
 
@@ -37,12 +37,12 @@ public class ShortUrl {
 		this.id = id;
 	}
 
-	public String getUrlDestiny() {
-		return urlDestiny;
+	public String getUrlDestination() {
+		return urlDestination;
 	}
 
-	public void setUrlDestiny(String urlDestiny) {
-		this.urlDestiny = urlDestiny;
+	public void setUrlDestination(String urlDestination) {
+		this.urlDestination = urlDestination;
 	}
 
 	public String getShortenedUrl() {
